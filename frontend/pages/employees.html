@@ -10,29 +10,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="text-center">
-            <div class="btn-group" role="group">
-              <button
-                type="button"
-                class="btn btn-warning"
-                onclick="EmployeesService.edit_employee(1)"
-              >
-                Edit
-              </button>
-              <button
-                type="button"
-                class="btn btn-danger"
-                onclick="EmployeesService.delete_employee(1)"
-              >
-                Delete
-              </button>
-            </div>
-          </td>
-          <td>John Doe</td>
-          <td>john.doe@gmail.com</td>
-          <td>100.000</td>
-        </tr>
+      
+
+
+
       </tbody>
     </table>
   </div>
@@ -105,6 +86,7 @@
     </div>
   </div>
 </div>
+<script src="./services/employees.js"></script>
 <script>
   /* 
     1. Populate the table with id `employee-performance` with the data returned
@@ -116,4 +98,6 @@
       d. when user clicks "Save changes" button in the modal persist changes
          for that employee in the database (6 points)
    */
+    EmployeesService.load_employees();
+
 </script>

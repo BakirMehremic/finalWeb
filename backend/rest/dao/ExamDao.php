@@ -13,7 +13,8 @@ class ExamDao
   {
     try {
             $this->conn= new PDO(
-                "mysql:host=localhost;dbname=final;port=3306", "root", "root"
+                            // localhost for windows
+                "mysql:host=127.0.0.1;dbname=final;port=3306", "root", "root"
             );
           $this->conn_check = "Connected successfully";
         } catch (PDOException $e) {

@@ -1,7 +1,8 @@
 var Constants = {
   get_api_base_url: function () {
     if(location.hostname == 'localhost'){
-      return "";
+      // must be hardcoded ?
+      return "http://localhost:80/finalWeb/backend/rest";
     } else {
       return "";
     }
