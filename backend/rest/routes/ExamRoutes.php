@@ -1,5 +1,6 @@
 <?php
 
+// http://localhost/finalWeb/backend/rest/connection-check
 Flight::route('GET /connection-check', function () {
     Flight::json(Flight::examService()->connection_check());
 });
