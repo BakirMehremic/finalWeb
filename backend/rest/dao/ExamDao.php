@@ -12,9 +12,12 @@ class ExamDao
   public function __construct()
   {
     try {
-            $this->conn= new PDO(
-                            // localhost for windows
-                "mysql:host=127.0.0.1;dbname=final;port=3306", "root", "root"
+            // $this->conn= new PDO(
+            //                 // localhost for windows
+            //     "mysql:host=127.0.0.1;dbname=final;port=3306", "root", "root"
+            // );
+            $this->conn = new PDO(
+                "mysql:host=db1.ibu.edu.ba;dbname=webfinal_db_3006;port=3306", "webfinal_db_user2", "webFinal3006"
             );
           $this->conn_check = "Connected successfully";
         } catch (PDOException $e) {
